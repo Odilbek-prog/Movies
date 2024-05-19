@@ -3,6 +3,7 @@
 .h6 {
 	white-space: nowrap;
 	overflow: hidden;
+	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	font-family: sans-serif, monospace;
 	font-weight: 600;
@@ -12,6 +13,14 @@
 	background-color: #020121;
 }
 .card {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		from(#21074d),
+		to(#77207e)
+	);
+	background: -o-linear-gradient(top left, #21074d, #77207e);
 	background: linear-gradient(to bottom right, #21074d, #77207e);
 	margin-left: 60px;
 }
@@ -23,12 +32,26 @@
 	border-radius: 8px;
 }
 .card:hover {
+	-webkit-box-shadow: 0 0 50px 0 rgba(168, 3, 36, 1);
 	box-shadow: 0 0 50px 0 rgba(168, 3, 36, 1);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 .button:hover {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right bottom,
+		from(#4e1aa7),
+		to(#77207e)
+	);
+	background: -o-linear-gradient(top left, #4e1aa7, #77207e);
 	background: linear-gradient(to bottom right, #4e1aa7, #77207e);
+	-webkit-box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.6);
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.6);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
